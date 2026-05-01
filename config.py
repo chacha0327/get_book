@@ -5,7 +5,8 @@ max_page = 10
 max_book = 50
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
-
 JSONL_FILE = DATA_DIR / "books.jsonl"
 SEEN_FILE = DATA_DIR / "seen_ids.txt"
 FAIL_FILE = DATA_DIR / "failed_urls.txt"
+JSON_FILE = DATA_DIR / "books.json"
+CARD_FILE = DATA_DIR / "seen_cards.txt"

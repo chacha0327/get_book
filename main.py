@@ -3,10 +3,11 @@ from fetcher import make_driver, fetch_html, make_soup
 from models import Bookdetail
 from parser import extract_isbn, extract_name, get_comment_url_and_product_id, crawel_product, get_details
 from storage import save_jsonl_file, convert_json
-from utils import save_debug_file
+from utils import save_debug_file, time_clock
 from typing import Dict, List
 import re, time, random
 from selenium.webdriver.chrome.options import Options
+
 def get_card(driver:Options) -> List[Dict]:
     try:
         out = []
@@ -38,7 +39,7 @@ def get_card(driver:Options) -> List[Dict]:
         driver.quit()
         return out
 
-def loop_page(card_url, max_page: int=max_page, max_book: int=max_book):
+def loop_page(card_url, max_page: int, max_book: int):
     seen = set()
     for n in range(1, max_page+1):
         try:
@@ -55,16 +56,14 @@ def loop_page(card_url, max_page: int=max_page, max_book: int=max_book):
                     details = get_details(url, driver_)
                     if details.product_id not in seen:
                         seen.add(details.product_id)
-                        save_jsonl_file(details, filename="test")
-                    if idx % 20 == 0:
-                        time.sleep(60)
-                        continue
+                        save_jsonl_file(details)
                     time.sleep(random.uniform(10, 20))
+                    time_clock(idx, 20, 60.0)
                 finally:
                     driver_.quit()
         finally:
             print("this page is OK")
-            convert_json("test.jsonl", "test.json")
+            convert_json()
             driver.quit()
 
 def run():
@@ -77,11 +76,9 @@ def run():
                 card_url = card["url"]
                 print(card_url)
                 print(f"[{card["text"]}]")
-                loop_page(card_url)
-                if idx % 20 == 0:
-                    time.sleep(30)
-                    continue
+                loop_page(card_url, max_page, max_book)
                 time.sleep(random.uniform(5, 10))
+                time_clock(idx, 20, 30.0)
             finally:
                 driver_.quit()
     finally:

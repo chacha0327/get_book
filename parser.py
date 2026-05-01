@@ -6,6 +6,7 @@ from utils import save_debug_file
 from models import Bookdetail
 from selenium.webdriver.chrome import options
 from fetcher import fetch_html, make_soup
+from storage import check_seen_ids
 def extract_isbn(soup: BeautifulSoup)  -> Optional[List]:
     text = soup.get_text(" ", strip=True)
     m = re.search(r"ISBN[：:]\s*(\d+)", text)
@@ -23,8 +24,8 @@ def get_comment_url_and_product_id(product_url):
     comment_url = f"https://www.books.com.tw/booksComment/getCommemt/{product_id}"
     return product_id, comment_url
 def crawel_product(soup: BeautifulSoup) -> List[str]:
-    out = []
     seen = set()
+    out = []
     try:
         h1 = soup.find_all("h1")
         if h1:
@@ -42,28 +43,30 @@ def crawel_product(soup: BeautifulSoup) -> List[str]:
 def get_details(product_url: str, driver: options) -> Bookdetail:
     prodcut_id, comment_url = get_comment_url_and_product_id(product_url)
     s = fetch_html(driver=driver, url=product_url)
-    if not s:
-        return Bookdetail(
-            name=None,
-            isbn=None,
-            comment_url=comment_url,
-            product_url=product_url,
-            product_id=prodcut_id           
-        )
-    if s:
-        soup = make_soup(s)
-        name = extract_name(soup)
-        isbn = extract_isbn(soup)
-        synopsis = get_synopsis(soup)
-        print(f"OK: name: {name}")
-        return Bookdetail(
-            name=name,
-            isbn=isbn,
-            comment_url=comment_url,
-            product_url=product_url,
-            product_id=prodcut_id,
-            synopsis=synopsis
-        )
+    c_id = check_seen_ids(prodcut_id)
+    if c_id:
+        if not s :
+            return Bookdetail(
+                name=None,
+                isbn=None,
+                comment_url=comment_url,
+                product_url=product_url,
+                product_id=prodcut_id           
+            )
+        if s :
+            soup = make_soup(s)
+            name = extract_name(soup)
+            isbn = extract_isbn(soup)
+            synopsis = get_synopsis(soup)
+            print(f"OK: name: {name}")
+            return Bookdetail(
+                name=name,
+                isbn=isbn,
+                comment_url=comment_url,
+                product_url=product_url,
+                product_id=prodcut_id,
+                synopsis=synopsis
+            )
 
 def get_synopsis(soup: BeautifulSoup):
     contents = soup.find_all("div", {"class": "content"}, {"style": "height:auto;"})

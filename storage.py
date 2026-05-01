@@ -1,19 +1,20 @@
 from dataclasses import asdict
 import json
-from config import DATA_DIR, JSONL_FILE, SEEN_FILE, FAIL_FILE
+from config import DATA_DIR, JSONL_FILE, SEEN_FILE, FAIL_FILE, JSON_FILE
+from models import Bookdetail
 
-def save_jsonl_file(detail, filename: str):
+def save_jsonl_file(detail):
 
-    with open(f"{filename}.jsonl", "a", encoding="utf-8") as f:
+    with open(JSONL_FILE, "a", encoding="utf-8") as f:
         json.dump(asdict(detail), f, ensure_ascii=False)
         f.write("\n")
 
-def convert_json(filename_1: str, filename_2: str):
+def convert_json():
     data = []
-    with open(filename_1, "r", encoding="utf-8") as f:
+    with open(JSONL_FILE, "r", encoding="utf-8") as f:
         for line in f:
             data.append(json.loads(line))
-    with open(filename_2, "w", encoding="utf-8") as f:
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2) 
 
 def load_seen_ids() -> set[str]:
@@ -27,3 +28,17 @@ def load_seen_ids() -> set[str]:
 def save_seen_id(product_id: str):
     with open(SEEN_FILE, "a", encoding="utf-8") as f:
         f.write(product_id + "\n")
+
+
+def save_failed_url(url: str):
+    with open(FAIL_FILE, "a", encoding="utf-8") as f:
+        f.write(url + "\n")
+
+def check_seen_ids(obj_):
+    seen = load_seen_ids()
+    if obj_ not in seen:
+        save_seen_id(obj_)
+        print(f"{obj_} saved")
+        return True
+    print("in seen")
+    return False
