@@ -1,6 +1,6 @@
 from dataclasses import asdict
 import json
-from config import DATA_DIR, JSONL_FILE, SEEN_FILE, FAIL_FILE, JSON_FILE
+from config import DATA_DIR, JSONL_FILE, SEEN_FILE, FAIL_FILE, JSON_FILE, CARD_FILE
 from models import Bookdetail
 
 def save_jsonl_file(detail):
@@ -42,3 +42,7 @@ def check_seen_ids(obj_):
         return True
     print("in seen")
     return False
+def save_cards(cards):
+    with open(CARD_FILE, "w", encoding="utf-8") as f:
+        json.dump(cards, f, ensure_ascii=False, indent=2)
+

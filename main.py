@@ -2,7 +2,7 @@ from config import BASE_URL, UA, max_page, max_book
 from fetcher import make_driver, fetch_html, make_soup
 from models import Bookdetail
 from parser import extract_isbn, extract_name, get_comment_url_and_product_id, crawel_product, get_details
-from storage import save_jsonl_file, convert_json
+from storage import save_jsonl_file, convert_json, save_cards
 from utils import save_debug_file, time_clock
 from typing import Dict, List
 import re, time, random
@@ -33,9 +33,10 @@ def get_card(driver:Options) -> List[Dict]:
                             "value": value,
                             "id": id_,
                             "url": f"https://www.books.com.tw/booksComment/filterComment/{name}?sub={value}&star=all&release=all&touch=all&cvt=all&forsale=&sort=1&"
-                        })
+                        })                 
     finally:
         print("get card OK")
+        save_cards(out)
         driver.quit()
         return out
 
@@ -53,10 +54,7 @@ def loop_page(card_url, max_page: int, max_book: int):
                 try:
                     driver_ = make_driver()
                     print(f"book: [{idx}/{len(product_url)}]")
-                    details = get_details(url, driver_)
-                    if details.product_id not in seen:
-                        seen.add(details.product_id)
-                        save_jsonl_file(details)
+                    get_details(url, driver_)
                     time.sleep(random.uniform(10, 20))
                     time_clock(idx, 20, 60.0)
                 finally:
