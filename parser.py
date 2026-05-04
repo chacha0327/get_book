@@ -1,12 +1,13 @@
 from bs4 import BeautifulSoup
-from typing import Optional, List, Tuple
+from typing import Optional, List, Tuple, Dict
 from urllib.parse import urlparse
 import re
 from utils import save_debug_file
 from models import Bookdetail
 from selenium.webdriver.chrome import options
-from fetcher import fetch_html, make_soup
-from storage import check_seen_ids
+from fetcher import fetch_html, make_soup, make_driver
+from storage import check_seen_ids, save_cards
+from config import BASE_URL
 def extract_isbn(soup: BeautifulSoup)  -> Optional[List]:
     text = soup.get_text(" ", strip=True)
     m = re.search(r"ISBN[：:]\s*(\d+)", text)
@@ -40,10 +41,12 @@ def crawel_product(soup: BeautifulSoup) -> List[str]:
         save_debug_file("crawel_book", soup.text)
         print(e)
 
-def get_details(product_url: str, driver: options) -> Bookdetail:
+def get_details(product_url: str) -> Bookdetail:
+    driver = make_driver()
     prodcut_id, comment_url = get_comment_url_and_product_id(product_url)
-    s = fetch_html(driver=driver, url=product_url)
+    s = fetch_html(url=product_url, driver=driver)
     c_id = check_seen_ids(prodcut_id)
+    driver.quit()
     if c_id:
         if not s :
             return Bookdetail(
@@ -67,6 +70,7 @@ def get_details(product_url: str, driver: options) -> Bookdetail:
                 product_id=prodcut_id,
                 synopsis=synopsis
             )
+    return False
 
 def get_synopsis(soup: BeautifulSoup):
     contents = soup.find_all("div", {"class": "content"}, {"style": "height:auto;"})
@@ -75,4 +79,35 @@ def get_synopsis(soup: BeautifulSoup):
         text = c.get_text(separator="\n", strip=True)
         t += text
     return t
-        
+def get_card() -> List[Dict]:
+    driver = make_driver()
+    try:
+        out = []
+        html = fetch_html(driver, BASE_URL)
+        soup = make_soup(html)
+        items = soup.find_all("li")
+        if items:
+            for item in items:
+                id_tag = item.find("input", {"id": re.compile(r"check-sub-[a-z0-9]+-\d+")})
+                if id_tag:
+                    id_ = id_tag.get("id")
+                    name = id_tag.get("name")
+                    value = id_tag.get("value")
+                    label = item.find("label", {"for": id_})
+                    span_text = label.get_text(strip=True)
+                    match_ = re.match(r"(.*)\((\d+)\)", span_text)
+                    count = match_.group(2)
+                    text = match_.group(1)
+                    if text != "全部":
+                        out.append({
+                            "text": text,
+                            "name": name,
+                            "value": value,
+                            "id": id_,
+                            "url": f"https://www.books.com.tw/booksComment/filterComment/{name}?sub={value}&star=all&release=all&touch=all&cvt=all&forsale=&sort=1&"
+                        })                 
+    finally:
+        print("get card OK")
+        save_cards(out)
+        driver.quit()
+        return out
