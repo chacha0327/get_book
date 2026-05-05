@@ -6,8 +6,9 @@ from utils import save_debug_file
 from models import Bookdetail
 from selenium.webdriver.chrome import options
 from fetcher import fetch_html, make_soup, make_driver
-from storage import check_seen_ids, save_cards
 from config import BASE_URL
+from card import loads_cards_url, save_cards
+from check import check_seen_ids
 def extract_isbn(soup: BeautifulSoup)  -> Optional[List]:
     text = soup.get_text(" ", strip=True)
     m = re.search(r"ISBN[：:]\s*(\d+)", text)
@@ -26,16 +27,18 @@ def get_comment_url_and_product_id(product_url):
     return product_id, comment_url
 def crawel_product(soup: BeautifulSoup) -> List[str]:
     seen = set()
+    seen_url = loads_cards_url()
     out = []
     try:
         h1 = soup.find_all("h1")
         if h1:
             for a in h1:
-                href = a.find("a", href=re.compile(r"https://www\.books\.com\.tw/products/[A-Za-z0-9]"))
-                url = href.get("href")
-                if href and href not in seen:
-                    url = href.get("href")
-                    out.append(url)
+                href_tag = a.find("a", href=re.compile(r"https://www\.books\.com\.tw/products/[A-Za-z0-9]"))
+                if href_tag:
+                    url = href_tag.get("href")
+                    if url and url not in seen and url not in seen_url:
+                        out.append(url)
+                        seen.add(url)
             return out
     except AttributeError as e:
         save_debug_file("crawel_book", soup.text)

@@ -41,16 +41,4 @@ def check_seen_ids(obj_):
         return True
     print("in seen")
     return False
-def save_cards(cards):
-    with open(CARD_FILE, "w", encoding="utf-8") as f:
-        json.dump(cards, f, ensure_ascii=False, indent=2)
-
-def loads_cards_id() -> set[str]:
-    if not CARD_FILE.exists():
-        return set()
-    with open(CARD_FILE, "r", encoding="utf-8") as f:
-        return {card["id"].strip() for card in f if card["id"].strip()}
-def loads_cards():
-    with open(CARD_FILE, "r", encoding="utf-8") as f:
-        return [card.strip() for card in f if card.strip()]
 
