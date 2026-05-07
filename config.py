@@ -10,3 +10,4 @@ SEEN_FILE = DATA_DIR / "seen_ids.txt"
 FAIL_FILE = DATA_DIR / "failed_urls.txt"
 JSON_FILE = DATA_DIR / "books.json"
 CARD_FILE = DATA_DIR / "seen_cards.json"
+WAIT_SEC_FETCH_HTML = 5

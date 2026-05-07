@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.remote.webdriver import WebDriver
 import time
 from bs4 import BeautifulSoup
+from config import WAIT_SEC_FETCH_HTML
 
 def make_driver():
     options = Options()
@@ -19,7 +20,6 @@ def _accept_alert(driver: WebDriver):
         pass
     except Exception as e:
         print(f"[Alert] accept failed: {e}")
-
 
 def fetch_html(driver: WebDriver, url: str, wait_sec: int = 5):
     try:
