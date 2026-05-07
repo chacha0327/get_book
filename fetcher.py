@@ -5,6 +5,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 import time
 from bs4 import BeautifulSoup
 from config import WAIT_SEC_FETCH_HTML
+from storage import save_error_url
 
 def make_driver():
     options = Options()
@@ -24,8 +25,11 @@ def _accept_alert(driver: WebDriver):
 def fetch_html(driver: WebDriver, url: str, wait_sec: int = 5):
     try:
         driver.get(url)
+        time.sleep(wait_sec)
+        return driver.page_source
     except UnexpectedAlertPresentException as e:
         print(f"Unexpected alert on GET {url}: {e}")
+        save_error_url(url)
         _accept_alert(driver)
         time.sleep(1)
         try:
@@ -35,10 +39,10 @@ def fetch_html(driver: WebDriver, url: str, wait_sec: int = 5):
             return None
     except WebDriverException as e:
         print(f"WebDriver error on GET {url}: {e}")
+        save_error_url()
         return None
 
-    time.sleep(wait_sec)
-    return driver.page_source
+
 
 def make_soup(html: str) -> BeautifulSoup:
     soup = BeautifulSoup(html, "html.parser")

@@ -1,6 +1,6 @@
 from dataclasses import asdict
 import json
-from config import DATA_DIR, JSONL_FILE, SEEN_FILE, FAIL_FILE, JSON_FILE, CARD_FILE
+from config import DATA_DIR, JSONL_FILE, SEEN_FILE, FAIL_FILE, JSON_FILE, ERROR_URL
 from models import Bookdetail
 def save_jsonl_file(detail):
 
@@ -42,3 +42,6 @@ def check_seen_ids(obj_):
     print("in seen")
     return False
 
+def save_error_url(url):
+    with open(ERROR_URL, "a", encoding="utf-8") as f:
+        f.write(f"{url}\n")
