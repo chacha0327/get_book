@@ -9,6 +9,7 @@ from fetcher import fetch_html, make_soup, make_driver
 from config import BASE_URL
 from card import loads_cards_url, save_cards
 from check import check_seen_ids
+from storage import load_error_url
 def extract_isbn(soup: BeautifulSoup)  -> Optional[List]:
     text = soup.get_text(" ", strip=True)
     m = re.search(r"ISBN[：:]\s*(\d+)", text)
@@ -28,6 +29,7 @@ def get_comment_url_and_product_id(product_url):
 def crawel_product(soup: BeautifulSoup) -> List[str]:
     seen = set()
     seen_url = loads_cards_url()
+    error_url = load_error_url()
     out = []
     try:
         h1 = soup.find_all("h1")
@@ -36,7 +38,7 @@ def crawel_product(soup: BeautifulSoup) -> List[str]:
                 href_tag = a.find("a", href=re.compile(r"https://www\.books\.com\.tw/products/[A-Za-z0-9]"))
                 if href_tag:
                     url = href_tag.get("href")
-                    if url and url not in seen and url not in seen_url:
+                    if url and url not in seen and url not in seen_url and url not in error_url:
                         out.append(url)
                         seen.add(url)
             return out

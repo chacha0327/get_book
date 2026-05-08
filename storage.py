@@ -45,3 +45,8 @@ def check_seen_ids(obj_):
 def save_error_url(url):
     with open(ERROR_URL, "a", encoding="utf-8") as f:
         f.write(f"{url}\n")
+def load_error_url() -> set[str]:
+    if not ERROR_URL.exists():
+        return set()
+    with open(ERROR_URL, "r", encoding="utf-8") as f:
+        return {url.strip() for url in f if url.strip()}
