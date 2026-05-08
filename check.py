@@ -15,5 +15,5 @@ def check_seen_ids(obj_):
         save_seen_id(obj_)
         print(f"{obj_} saved")
         return True
-    print("in seen")
+    print("check card return False Please find the reason")
     return False

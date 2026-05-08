@@ -48,7 +48,8 @@ def get_details(product_url: str) -> Bookdetail:
     driver = make_driver()
     prodcut_id, comment_url = get_comment_url_and_product_id(product_url)
     s = fetch_html(url=product_url, driver=driver)
-    c_id = check_seen_ids(prodcut_id)
+    if s:
+        c_id = check_seen_ids(prodcut_id)
     driver.quit()
     if c_id:
         if not s :
@@ -73,6 +74,7 @@ def get_details(product_url: str) -> Bookdetail:
                 product_id=prodcut_id,
                 synopsis=synopsis
             )
+    print(f"{product_url} get some errors")
     return False
 
 def get_synopsis(soup: BeautifulSoup):
