@@ -9,9 +9,9 @@ def check_card():
     print("card had been saved")
     with open(CARD_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
-def check_seen_ids(obj_):
+def check_seen_ids(obj_, error=False):
     seen = load_seen_ids()
-    if obj_ not in seen:
+    if obj_ not in seen and not error:
         save_seen_id(obj_)
         print(f"{obj_} saved")
         return True

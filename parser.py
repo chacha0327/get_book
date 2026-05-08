@@ -50,11 +50,10 @@ def get_details(product_url: str) -> Bookdetail:
     driver = make_driver()
     prodcut_id, comment_url = get_comment_url_and_product_id(product_url)
     s = fetch_html(url=product_url, driver=driver)
-    if s:
-        c_id = check_seen_ids(prodcut_id)
+    c_id = check_seen_ids(prodcut_id, error=s)
     driver.quit()
     if c_id:
-        if not s :
+        if not s:
             return Bookdetail(
                 name=None,
                 isbn=None,
@@ -82,10 +81,12 @@ def get_details(product_url: str) -> Bookdetail:
 def get_synopsis(soup: BeautifulSoup):
     contents = soup.find_all("div", {"class": "content"}, {"style": "height:auto;"})
     t = ""
-    for c in contents[:2]:
-        text = c.get_text(separator="\n", strip=True)
-        t += text
-    return t
+    if contents:
+        for c in contents[:2]:
+            text = c.get_text(separator="\n", strip=True)
+            t += text
+        return t
+    return None
 def get_card() -> List[Dict]:
     driver = make_driver()
     try:
