@@ -2,6 +2,7 @@ from fetcher import make_driver, fetch_html, make_soup
 from typing import List, Dict
 import re, json
 from config import CARD_FILE, BASE_URL, JSONL_FILE
+from log import log_error, log_info
 def get_card() -> List[Dict]:
     driver = make_driver()
     try:
@@ -30,7 +31,7 @@ def get_card() -> List[Dict]:
                             "url": f"https://www.books.com.tw/booksComment/filterComment/{name}?sub={value}&star=all&release=all&touch=all&cvt=all&forsale=&sort=1&"
                         })                 
     finally:
-        print("get card OK")
+        log_info("get card OK")
         save_cards(out)
         driver.quit()
         return out

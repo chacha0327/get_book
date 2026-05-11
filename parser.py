@@ -9,7 +9,8 @@ from fetcher import fetch_html, make_soup, make_driver
 from config import BASE_URL
 from card import loads_cards_url, save_cards
 from check import check_seen_ids
-from storage import load_error_url
+from storage import load_error_url, save_error_url
+from log import log_info, log_error
 def extract_isbn(soup: BeautifulSoup)  -> Optional[List]:
     text = soup.get_text(" ", strip=True)
     m = re.search(r"ISBN[：:]\s*(\d+)", text)
@@ -75,8 +76,9 @@ def get_details(product_url: str) -> Bookdetail:
                 product_id=prodcut_id,
                 synopsis=synopsis
             )
-    print(f"{product_url} get some errors")
-    return False
+    log_error(f"{product_url} get some errors")
+    save_error_url(product_url)
+    return None
 
 def get_synopsis(soup: BeautifulSoup):
     contents = soup.find_all("div", {"class": "content"}, {"style": "height:auto;"})
@@ -115,7 +117,7 @@ def get_card() -> List[Dict]:
                             "url": f"https://www.books.com.tw/booksComment/filterComment/{name}?sub={value}&star=all&release=all&touch=all&cvt=all&forsale=&sort=1&"
                         })                 
     finally:
-        print("get card OK")
+        log_info("get card OK")
         save_cards(out)
         driver.quit()
         return out

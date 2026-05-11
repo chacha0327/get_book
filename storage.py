@@ -1,7 +1,7 @@
 from dataclasses import asdict
 import json
-from config import DATA_DIR, JSONL_FILE, SEEN_FILE, FAIL_FILE, JSON_FILE, ERROR_URL
-from models import Bookdetail
+from config import JSONL_FILE, SEEN_FILE, FAIL_FILE, JSON_FILE, ERROR_URL
+from log import log_info, log_error
 def save_jsonl_file(detail):
 
     with open(JSONL_FILE, "a", encoding="utf-8") as f:
@@ -37,14 +37,16 @@ def check_seen_ids(obj_):
     seen = load_seen_ids()
     if obj_ not in seen:
         save_seen_id(obj_)
-        print(f"{obj_} saved")
+        log_info(f"{obj_} saved")
         return True
-    print("in seen")
+    log_info("in seen")
     return False
 
 def save_error_url(url):
+    seen = load_error_url()
     with open(ERROR_URL, "a", encoding="utf-8") as f:
-        f.write(f"{url}\n")
+        if url not in seen:
+            f.write(f"{url}\n")
 def load_error_url() -> set[str]:
     if not ERROR_URL.exists():
         return set()
