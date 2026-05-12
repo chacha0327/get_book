@@ -1,4 +1,4 @@
-from config import max_page, max_book
+
 from fetcher import make_driver, fetch_html, make_soup
 from parser import crawel_product, get_details
 from storage import save_jsonl_file, convert_json
@@ -6,6 +6,7 @@ from utils import time_clock
 import time, random
 from check import check_card
 from log import log_info, log_error
+import keyboard
 
 
 def loop_page(card_url, max_page: int, max_book: int):
@@ -28,9 +29,17 @@ def loop_page(card_url, max_page: int, max_book: int):
         log_info(f"Page[{n}] OK!")
         convert_json()
 
+def setting():
+    setting = list(input("maxpage maxbook").split(" "))
+    max_page = int(setting[1])
+    max_book = int(setting[1])
+    return max_page, max_book
+
+
 def run():
+    max_page, max_book = setting()
     cards = check_card()
-    for idx, card in enumerate(cards[:2], start=1):
+    for idx, card in enumerate(cards[1:2], start=1):
         card_url = card["url"]
         log_info(f"[{card["text"]}]")
         loop_page(card_url, max_page, max_book)
@@ -41,7 +50,4 @@ def run():
 
 
 if __name__ == "__main__":
-    try:
-        run()
-    finally:
-        convert_json()
+    run()

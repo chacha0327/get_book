@@ -40,8 +40,13 @@ def fetch_html(driver: WebDriver, url: str, wait_sec: int = 5):
             return None
     except WebDriverException as e:
         log_error(f"WebDriver error on GET {url}: {e}")
-        save_error_url()
+        save_error_url(url)
         return None
+    except TypeError as third_e:
+        log_error(f"Type error on GET {url}: {third_e}")
+        save_error_url(url)
+        return None
+
 
 def make_soup(html: str) -> BeautifulSoup:
     soup = BeautifulSoup(html, "html.parser")

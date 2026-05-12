@@ -1,0 +1,603 @@
+2026-05-11 22:54:50.952 | INFO     | log:log_info:6 - card had been saved
+2026-05-11 22:54:50.987 | INFO     | log:log_info:6 - [文學小說]
+2026-05-11 22:54:54.935 | INFO     | log:log_info:6 - page [1/10]
+2026-05-11 22:55:04.174 | INFO     | log:log_info:6 - Page[1] OK!
+2026-05-11 22:55:05.882 | INFO     | log:log_info:6 - page [2/10]
+2026-05-11 22:55:15.429 | INFO     | log:log_info:6 - Page[2] OK!
+2026-05-11 22:55:17.240 | INFO     | log:log_info:6 - page [3/10]
+2026-05-11 22:55:26.047 | INFO     | log:log_info:6 - Page[3] OK!
+2026-05-11 22:55:27.442 | INFO     | log:log_info:6 - page [4/10]
+2026-05-11 22:55:37.027 | INFO     | log:log_info:6 - Page[4] OK!
+2026-05-11 22:55:38.457 | INFO     | log:log_info:6 - page [5/10]
+2026-05-11 22:55:47.880 | INFO     | log:log_info:6 - Page[5] OK!
+2026-05-11 22:55:49.273 | INFO     | log:log_info:6 - page [6/10]
+2026-05-11 22:55:59.953 | INFO     | log:log_info:6 - Page[6] OK!
+2026-05-11 22:56:01.393 | INFO     | log:log_info:6 - page [7/10]
+2026-05-11 22:56:11.203 | INFO     | log:log_info:6 - book: [1/36]
+2026-05-11 22:56:21.144 | INFO     | log:log_info:6 - 0011035199 saved
+2026-05-11 22:56:43.429 | INFO     | log:log_info:6 - book: [2/36]
+2026-05-11 22:56:52.885 | INFO     | log:log_info:6 - 0011035202 saved
+2026-05-11 22:57:10.148 | INFO     | log:log_info:6 - book: [3/36]
+2026-05-11 22:57:19.674 | INFO     | log:log_info:6 - 0011035203 saved
+2026-05-11 22:57:38.823 | INFO     | log:log_info:6 - book: [4/36]
+2026-05-11 22:57:48.490 | INFO     | log:log_info:6 - 0011035204 saved
+2026-05-11 22:58:11.133 | INFO     | log:log_info:6 - book: [5/36]
+2026-05-11 22:58:21.146 | INFO     | log:log_info:6 - 0011035817 saved
+2026-05-11 22:58:42.022 | INFO     | log:log_info:6 - book: [6/36]
+2026-05-11 22:58:51.233 | INFO     | log:log_info:6 - 0011035832 saved
+2026-05-11 22:59:09.661 | INFO     | log:log_info:6 - book: [7/36]
+2026-05-11 22:59:19.397 | INFO     | log:log_info:6 - 0011035218 saved
+2026-05-11 22:59:41.566 | INFO     | log:log_info:6 - book: [8/36]
+2026-05-11 22:59:51.730 | INFO     | log:log_info:6 - 0011036120 saved
+2026-05-11 23:00:07.667 | INFO     | log:log_info:6 - book: [9/36]
+2026-05-11 23:00:18.431 | INFO     | log:log_info:6 - 0011036124 saved
+2026-05-11 23:00:32.186 | INFO     | log:log_info:6 - book: [10/36]
+2026-05-11 23:00:43.268 | INFO     | log:log_info:6 - 0011036583 saved
+2026-05-11 23:00:58.672 | INFO     | log:log_info:6 - book: [11/36]
+2026-05-11 23:01:08.545 | INFO     | log:log_info:6 - 0011036166 saved
+2026-05-11 23:01:22.092 | INFO     | log:log_info:6 - book: [12/36]
+2026-05-11 23:01:31.674 | INFO     | log:log_info:6 - 0011036168 saved
+2026-05-11 23:01:49.579 | INFO     | log:log_info:6 - book: [13/36]
+2026-05-11 23:01:59.285 | INFO     | log:log_info:6 - 0011036473 saved
+2026-05-11 23:02:20.022 | INFO     | log:log_info:6 - book: [14/36]
+2026-05-11 23:02:29.201 | INFO     | log:log_info:6 - 0011035499 saved
+2026-05-11 23:02:43.896 | INFO     | log:log_info:6 - book: [15/36]
+2026-05-11 23:02:53.025 | INFO     | log:log_info:6 - 0011036158 saved
+2026-05-11 23:03:05.459 | INFO     | log:log_info:6 - book: [16/36]
+2026-05-11 23:03:15.123 | INFO     | log:log_info:6 - 0011034899 saved
+2026-05-11 23:03:28.084 | INFO     | log:log_info:6 - book: [17/36]
+2026-05-11 23:03:37.561 | INFO     | log:log_info:6 - 0011034900 saved
+2026-05-11 23:03:57.579 | INFO     | log:log_info:6 - book: [18/36]
+2026-05-11 23:04:06.967 | INFO     | log:log_info:6 - 0011034910 saved
+2026-05-11 23:04:20.080 | INFO     | log:log_info:6 - book: [19/36]
+2026-05-11 23:04:29.305 | INFO     | log:log_info:6 - 0011035161 saved
+2026-05-11 23:04:43.900 | INFO     | log:log_info:6 - book: [20/36]
+2026-05-11 23:04:54.977 | INFO     | log:log_info:6 - 0011035462 saved
+2026-05-11 23:06:11.535 | INFO     | log:log_info:6 - book: [21/36]
+2026-05-11 23:06:21.499 | INFO     | log:log_info:6 - 0011035500 saved
+2026-05-11 23:06:43.551 | INFO     | log:log_info:6 - book: [22/36]
+2026-05-11 23:06:52.755 | INFO     | log:log_info:6 - 0011035626 saved
+2026-05-11 23:07:11.856 | INFO     | log:log_info:6 - book: [23/36]
+2026-05-11 23:07:21.316 | INFO     | log:log_info:6 - 0011035627 saved
+2026-05-11 23:07:43.709 | INFO     | log:log_info:6 - book: [24/36]
+2026-05-11 23:07:52.792 | INFO     | log:log_info:6 - 0011035909 saved
+2026-05-11 23:08:05.218 | INFO     | log:log_info:6 - book: [25/36]
+2026-05-11 23:08:14.147 | INFO     | log:log_info:6 - 0011035216 saved
+2026-05-11 23:08:33.990 | INFO     | log:log_info:6 - book: [26/36]
+2026-05-11 23:08:44.044 | INFO     | log:log_info:6 - 0011035537 saved
+2026-05-11 23:09:04.329 | INFO     | log:log_info:6 - book: [27/36]
+2026-05-11 23:09:13.409 | INFO     | log:log_info:6 - 0011035418 saved
+2026-05-11 23:09:32.985 | INFO     | log:log_info:6 - book: [28/36]
+2026-05-11 23:09:42.240 | INFO     | log:log_info:6 - 0011035790 saved
+2026-05-11 23:10:00.313 | INFO     | log:log_info:6 - book: [29/36]
+2026-05-11 23:10:09.381 | INFO     | log:log_info:6 - 0011035792 saved
+2026-05-11 23:10:31.127 | INFO     | log:log_info:6 - book: [30/36]
+2026-05-11 23:10:39.792 | INFO     | log:log_info:6 - 0011034238 saved
+2026-05-11 23:10:57.865 | INFO     | log:log_info:6 - book: [31/36]
+2026-05-11 23:11:06.582 | INFO     | log:log_info:6 - 0011036077 saved
+2026-05-11 23:11:21.896 | INFO     | log:log_info:6 - book: [32/36]
+2026-05-11 23:11:31.160 | INFO     | log:log_info:6 - 0011036431 saved
+2026-05-11 23:11:48.187 | INFO     | log:log_info:6 - book: [33/36]
+2026-05-11 23:11:57.460 | INFO     | log:log_info:6 - 0011035568 saved
+2026-05-11 23:12:16.805 | INFO     | log:log_info:6 - book: [34/36]
+2026-05-11 23:12:25.683 | INFO     | log:log_info:6 - 0011034853 saved
+2026-05-11 23:12:47.119 | INFO     | log:log_info:6 - book: [35/36]
+2026-05-11 23:12:56.229 | INFO     | log:log_info:6 - 0011035617 saved
+2026-05-11 23:13:14.233 | INFO     | log:log_info:6 - book: [36/36]
+2026-05-11 23:13:22.839 | INFO     | log:log_info:6 - 0011035618 saved
+2026-05-11 23:13:36.334 | INFO     | log:log_info:6 - Page[7] OK!
+2026-05-11 23:13:37.709 | INFO     | log:log_info:6 - page [8/10]
+2026-05-11 23:13:48.103 | INFO     | log:log_info:6 - book: [1/49]
+2026-05-11 23:13:56.898 | INFO     | log:log_info:6 - 0011035020 saved
+2026-05-11 23:14:15.100 | INFO     | log:log_info:6 - book: [2/49]
+2026-05-11 23:14:24.468 | INFO     | log:log_info:6 - 0011035021 saved
+2026-05-11 23:14:42.654 | INFO     | log:log_info:6 - book: [3/49]
+2026-05-11 23:14:51.464 | INFO     | log:log_info:6 - 0011035119 saved
+2026-05-11 23:15:09.159 | INFO     | log:log_info:6 - book: [4/49]
+2026-05-11 23:15:18.057 | INFO     | log:log_info:6 - 0011035696 saved
+2026-05-11 23:15:39.074 | INFO     | log:log_info:6 - book: [5/49]
+2026-05-11 23:15:48.669 | INFO     | log:log_info:6 - 0011035110 saved
+2026-05-11 23:16:01.914 | INFO     | log:log_info:6 - book: [6/49]
+2026-05-11 23:16:10.964 | INFO     | log:log_info:6 - 0011035112 saved
+2026-05-11 23:16:32.057 | INFO     | log:log_info:6 - book: [7/49]
+2026-05-11 23:16:40.711 | INFO     | log:log_info:6 - 0011035160 saved
+2026-05-11 23:17:00.897 | INFO     | log:log_info:6 - book: [8/49]
+2026-05-11 23:17:09.844 | INFO     | log:log_info:6 - 0011035179 saved
+2026-05-11 23:17:31.389 | INFO     | log:log_info:6 - book: [9/49]
+2026-05-11 23:17:41.598 | INFO     | log:log_info:6 - 0011035439 saved
+2026-05-11 23:18:00.367 | INFO     | log:log_info:6 - book: [10/49]
+2026-05-11 23:18:13.241 | INFO     | log:log_info:6 - 0011035081 saved
+2026-05-11 23:18:29.162 | INFO     | log:log_info:6 - book: [11/49]
+2026-05-11 23:18:40.481 | INFO     | log:log_info:6 - 0011035688 saved
+2026-05-11 23:18:55.125 | INFO     | log:log_info:6 - book: [12/49]
+2026-05-11 23:19:05.401 | INFO     | log:log_info:6 - 0011035460 saved
+2026-05-11 23:19:23.656 | INFO     | log:log_info:6 - book: [13/49]
+2026-05-11 23:19:34.111 | INFO     | log:log_info:6 - 0011035690 saved
+2026-05-11 23:19:56.414 | INFO     | log:log_info:6 - book: [14/49]
+2026-05-11 23:20:05.373 | INFO     | log:log_info:6 - 0011034760 saved
+2026-05-11 23:20:20.538 | INFO     | log:log_info:6 - book: [15/49]
+2026-05-11 23:20:29.322 | INFO     | log:log_info:6 - 0011034697 saved
+2026-05-11 23:20:50.188 | INFO     | log:log_info:6 - book: [16/49]
+2026-05-11 23:21:00.029 | INFO     | log:log_info:6 - 0011034747 saved
+2026-05-11 23:21:15.903 | INFO     | log:log_info:6 - book: [17/49]
+2026-05-11 23:21:25.395 | INFO     | log:log_info:6 - 0011034861 saved
+2026-05-11 23:21:42.719 | INFO     | log:log_info:6 - book: [18/49]
+2026-05-11 23:21:51.565 | INFO     | log:log_info:6 - 0011034865 saved
+2026-05-11 23:22:07.816 | INFO     | log:log_info:6 - book: [19/49]
+2026-05-11 23:22:21.954 | INFO     | log:log_info:6 - 0011034459 saved
+2026-05-11 23:22:34.448 | INFO     | log:log_info:6 - book: [20/49]
+2026-05-11 23:22:46.817 | INFO     | log:log_info:6 - 0011034518 saved
+2026-05-11 23:24:05.790 | INFO     | log:log_info:6 - book: [21/49]
+2026-05-11 23:24:16.967 | INFO     | log:log_info:6 - 0011034286 saved
+2026-05-11 23:24:29.884 | INFO     | log:log_info:6 - book: [22/49]
+2026-05-11 23:24:42.121 | INFO     | log:log_info:6 - 0011034024 saved
+2026-05-11 23:24:59.456 | INFO     | log:log_info:6 - book: [23/49]
+2026-05-11 23:25:10.196 | INFO     | log:log_info:6 - 0010774785 saved
+2026-05-11 23:25:26.861 | INFO     | log:log_info:6 - book: [24/49]
+2026-05-11 23:25:39.472 | INFO     | log:log_info:6 - 0011033382 saved
+2026-05-11 23:25:57.918 | INFO     | log:log_info:6 - book: [25/49]
+2026-05-11 23:26:07.243 | INFO     | log:log_info:6 - 0011031494 saved
+2026-05-11 23:26:21.055 | INFO     | log:log_info:6 - book: [26/49]
+2026-05-11 23:26:33.267 | INFO     | log:log_info:6 - 0011034927 saved
+2026-05-11 23:26:53.939 | INFO     | log:log_info:6 - book: [27/49]
+2026-05-11 23:27:06.555 | INFO     | log:log_info:6 - 0011034201 saved
+2026-05-11 23:27:21.281 | INFO     | log:log_info:6 - book: [28/49]
+2026-05-11 23:27:33.185 | INFO     | log:log_info:6 - 0011034202 saved
+2026-05-11 23:27:53.333 | INFO     | log:log_info:6 - book: [29/49]
+2026-05-11 23:28:05.884 | INFO     | log:log_info:6 - 0011034215 saved
+2026-05-11 23:28:24.427 | INFO     | log:log_info:6 - book: [30/49]
+2026-05-11 23:28:25.989 | ERROR    | log:log_error:9 - WebDriver error on GET https://www.books.com.tw/products/0011034199: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=148.0.7778.96)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff74423d6d5+14ef5]
+	chromedriver!GetHandleVerifier [0x7ff74423d740+14f60]
+	chromedriver!(No symbol) [0x7ff743f8d59d]
+	chromedriver!(No symbol) [0x7ff743f8a0c4]
+	chromedriver!(No symbol) [0x7ff743f7a4b1]
+	chromedriver!(No symbol) [0x7ff743f7c39f]
+	chromedriver!(No symbol) [0x7ff743f7aa53]
+	chromedriver!(No symbol) [0x7ff743f7a21b]
+	chromedriver!(No symbol) [0x7ff743f79ed1]
+	chromedriver!(No symbol) [0x7ff743f77b1b]
+	chromedriver!(No symbol) [0x7ff743f78262]
+	chromedriver!(No symbol) [0x7ff743f91856]
+	chromedriver!(No symbol) [0x7ff744035314]
+	chromedriver!(No symbol) [0x7ff74400f76a]
+	chromedriver!(No symbol) [0x7ff7440344ff]
+	chromedriver!(No symbol) [0x7ff743fd9608]
+	chromedriver!(No symbol) [0x7ff743fda4f3]
+	chromedriver!GetHandleVerifier [0x7ff74453b779+312f99]
+	chromedriver!GetHandleVerifier [0x7ff744535c8b+30d4ab]
+	chromedriver!GetHandleVerifier [0x7ff744559012+330832]
+	chromedriver!GetHandleVerifier [0x7ff74425a485+31ca5]
+	chromedriver!GetHandleVerifier [0x7ff744262e7c+3a69c]
+	chromedriver!GetHandleVerifier [0x7ff744246a74+1e294]
+	chromedriver!GetHandleVerifier [0x7ff744246c04+1e424]
+	chromedriver!GetHandleVerifier [0x7ff74422b327+2b47]
+	KERNEL32!BaseThreadInitThunk [0x7ffe6444e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffe6578c3fc+2c]
+
+2026-05-12 08:36:50.849 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 08:36:50.873 | INFO     | log:log_info:6 - [文學小說]
+2026-05-12 08:36:53.056 | INFO     | log:log_info:6 - page [1/10]
+2026-05-12 08:37:02.205 | INFO     | log:log_info:6 - book: [1/6]
+2026-05-12 08:37:11.454 | INFO     | log:log_info:6 - 0011051433 saved
+2026-05-12 08:37:26.422 | INFO     | log:log_info:6 - book: [2/6]
+2026-05-12 08:37:36.495 | INFO     | log:log_info:6 - 0011050323 saved
+2026-05-12 08:37:50.622 | INFO     | log:log_info:6 - book: [3/6]
+2026-05-12 08:37:59.500 | INFO     | log:log_info:6 - 0011049306 saved
+2026-05-12 08:38:17.502 | INFO     | log:log_info:6 - book: [4/6]
+2026-05-12 08:38:26.678 | INFO     | log:log_info:6 - 0011048197 saved
+2026-05-12 08:38:42.181 | INFO     | log:log_info:6 - book: [5/6]
+2026-05-12 08:38:51.279 | INFO     | log:log_info:6 - 0011048189 saved
+2026-05-12 08:39:11.130 | INFO     | log:log_info:6 - book: [6/6]
+2026-05-12 08:39:19.880 | INFO     | log:log_info:6 - 0011048262 saved
+2026-05-12 08:39:32.740 | INFO     | log:log_info:6 - Page[1] OK!
+2026-05-12 08:39:34.209 | INFO     | log:log_info:6 - page [2/10]
+2026-05-12 08:39:44.419 | INFO     | log:log_info:6 - Page[2] OK!
+2026-05-12 08:39:45.960 | INFO     | log:log_info:6 - page [3/10]
+2026-05-12 08:39:55.965 | INFO     | log:log_info:6 - Page[3] OK!
+2026-05-12 08:39:57.479 | INFO     | log:log_info:6 - page [4/10]
+2026-05-12 08:40:07.347 | INFO     | log:log_info:6 - Page[4] OK!
+2026-05-12 08:40:08.818 | INFO     | log:log_info:6 - page [5/10]
+2026-05-12 08:40:19.209 | INFO     | log:log_info:6 - Page[5] OK!
+2026-05-12 08:40:20.674 | INFO     | log:log_info:6 - page [6/10]
+2026-05-12 08:40:30.390 | INFO     | log:log_info:6 - Page[6] OK!
+2026-05-12 08:40:31.904 | INFO     | log:log_info:6 - page [7/10]
+2026-05-12 08:40:42.471 | INFO     | log:log_info:6 - Page[7] OK!
+2026-05-12 08:40:43.971 | INFO     | log:log_info:6 - page [8/10]
+2026-05-12 08:40:53.652 | INFO     | log:log_info:6 - book: [1/22]
+2026-05-12 08:41:02.684 | INFO     | log:log_info:6 - 0011035641 saved
+2026-05-12 08:41:16.967 | INFO     | log:log_info:6 - book: [2/22]
+2026-05-12 08:41:25.835 | INFO     | log:log_info:6 - 0011034199 saved
+2026-05-12 08:41:44.174 | INFO     | log:log_info:6 - book: [3/22]
+2026-05-12 08:41:54.299 | INFO     | log:log_info:6 - 0011033599 saved
+2026-05-12 08:42:11.108 | INFO     | log:log_info:6 - book: [4/22]
+2026-05-12 08:42:19.941 | INFO     | log:log_info:6 - 0011034148 saved
+2026-05-12 08:42:38.312 | INFO     | log:log_info:6 - book: [5/22]
+2026-05-12 08:42:47.439 | INFO     | log:log_info:6 - 0011033938 saved
+2026-05-12 08:43:02.073 | INFO     | log:log_info:6 - book: [6/22]
+2026-05-12 08:43:11.248 | INFO     | log:log_info:6 - 0011034103 saved
+2026-05-12 08:43:28.449 | INFO     | log:log_info:6 - book: [7/22]
+2026-05-12 08:43:38.409 | INFO     | log:log_info:6 - 0011032405 saved
+2026-05-12 08:43:52.703 | INFO     | log:log_info:6 - book: [8/22]
+2026-05-12 08:44:01.893 | INFO     | log:log_info:6 - 0010753606 saved
+2026-05-12 08:44:22.387 | INFO     | log:log_info:6 - book: [9/22]
+2026-05-12 08:44:31.382 | INFO     | log:log_info:6 - 0010884812 saved
+2026-05-12 08:44:49.661 | INFO     | log:log_info:6 - book: [10/22]
+2026-05-12 08:44:59.284 | INFO     | log:log_info:6 - 0011033684 saved
+2026-05-12 08:45:13.568 | INFO     | log:log_info:6 - book: [11/22]
+2026-05-12 08:45:22.908 | INFO     | log:log_info:6 - 0011033689 saved
+2026-05-12 08:45:38.382 | INFO     | log:log_info:6 - book: [12/22]
+2026-05-12 08:45:48.286 | INFO     | log:log_info:6 - 0011033691 saved
+2026-05-12 08:46:09.814 | INFO     | log:log_info:6 - book: [13/22]
+2026-05-12 08:46:18.942 | INFO     | log:log_info:6 - 0010957660 saved
+2026-05-12 08:46:39.813 | INFO     | log:log_info:6 - book: [14/22]
+2026-05-12 08:46:49.619 | INFO     | log:log_info:6 - 0011032772 saved
+2026-05-12 08:47:02.845 | INFO     | log:log_info:6 - book: [15/22]
+2026-05-12 08:47:14.515 | INFO     | log:log_info:6 - 0011032976 saved
+2026-05-12 08:47:28.795 | INFO     | log:log_info:6 - book: [16/22]
+2026-05-12 08:47:38.187 | INFO     | log:log_info:6 - 0011032978 saved
+2026-05-12 08:47:57.069 | INFO     | log:log_info:6 - book: [17/22]
+2026-05-12 08:48:06.257 | INFO     | log:log_info:6 - 0011032984 saved
+2026-05-12 08:48:23.974 | INFO     | log:log_info:6 - book: [18/22]
+2026-05-12 08:48:33.596 | INFO     | log:log_info:6 - 0011032989 saved
+2026-05-12 08:48:49.308 | INFO     | log:log_info:6 - book: [19/22]
+2026-05-12 08:48:58.656 | INFO     | log:log_info:6 - 0011033363 saved
+2026-05-12 08:49:17.431 | INFO     | log:log_info:6 - book: [20/22]
+2026-05-12 08:49:26.252 | INFO     | log:log_info:6 - 0011032415 saved
+2026-05-12 08:50:40.056 | INFO     | log:log_info:6 - book: [21/22]
+2026-05-12 08:50:49.709 | INFO     | log:log_info:6 - 0011032416 saved
+2026-05-12 08:51:02.876 | INFO     | log:log_info:6 - book: [22/22]
+2026-05-12 08:51:11.614 | INFO     | log:log_info:6 - 0011032652 saved
+2026-05-12 08:51:26.162 | INFO     | log:log_info:6 - Page[8] OK!
+2026-05-12 08:51:27.675 | INFO     | log:log_info:6 - page [9/10]
+2026-05-12 08:51:37.980 | INFO     | log:log_info:6 - book: [1/50]
+2026-05-12 08:51:47.798 | INFO     | log:log_info:6 - 0011033335 saved
+2026-05-12 08:52:05.412 | INFO     | log:log_info:6 - book: [2/50]
+2026-05-12 08:52:14.672 | INFO     | log:log_info:6 - 0011032636 saved
+2026-05-12 08:52:32.377 | INFO     | log:log_info:6 - book: [3/50]
+2026-05-12 08:52:41.253 | INFO     | log:log_info:6 - 0011033304 saved
+2026-05-12 08:52:54.415 | INFO     | log:log_info:6 - book: [4/50]
+2026-05-12 08:53:03.299 | INFO     | log:log_info:6 - 0011031490 saved
+2026-05-12 08:53:23.610 | INFO     | log:log_info:6 - book: [5/50]
+2026-05-12 08:53:32.740 | INFO     | log:log_info:6 - 0011032422 saved
+2026-05-12 08:53:53.751 | INFO     | log:log_info:6 - book: [6/50]
+2026-05-12 08:54:03.460 | INFO     | log:log_info:6 - 0011032571 saved
+2026-05-12 08:54:23.423 | INFO     | log:log_info:6 - book: [7/50]
+2026-05-12 08:54:32.322 | INFO     | log:log_info:6 - 0011032914 saved
+2026-05-12 08:54:48.822 | INFO     | log:log_info:6 - book: [8/50]
+2026-05-12 08:54:57.763 | INFO     | log:log_info:6 - 0011033055 saved
+2026-05-12 08:55:11.630 | INFO     | log:log_info:6 - book: [9/50]
+2026-05-12 08:55:20.851 | INFO     | log:log_info:6 - 0011033301 saved
+2026-05-12 08:55:39.846 | INFO     | log:log_info:6 - book: [10/50]
+2026-05-12 08:55:49.301 | INFO     | log:log_info:6 - 0010936845 saved
+2026-05-12 08:56:02.586 | INFO     | log:log_info:6 - book: [11/50]
+2026-05-12 08:56:11.442 | INFO     | log:log_info:6 - 0010941981 saved
+2026-05-12 08:56:25.140 | INFO     | log:log_info:6 - book: [12/50]
+2026-05-12 08:56:31.817 | ERROR    | log:log_error:9 - Unexpected alert on GET https://www.books.com.tw/products/0011032173: Alert Text: 本商品為限制級商品，限18歲以上會員瀏覽，請先登入會員。
+Message: unexpected alert open: {Alert text : 本商品為限制級商品，限18歲以上會員瀏覽，請先登入會員。}
+  (Session info: chrome=148.0.7778.96)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff69cd3d6d5+14ef5]
+	chromedriver!GetHandleVerifier [0x7ff69cd3d740+14f60]
+	chromedriver!(No symbol) [0x7ff69ca8d59d]
+	chromedriver!(No symbol) [0x7ff69cb34fa4]
+	chromedriver!(No symbol) [0x7ff69cad9608]
+	chromedriver!(No symbol) [0x7ff69cada4f3]
+	chromedriver!GetHandleVerifier [0x7ff69d03b779+312f99]
+	chromedriver!GetHandleVerifier [0x7ff69d035c8b+30d4ab]
+	chromedriver!GetHandleVerifier [0x7ff69d059012+330832]
+	chromedriver!GetHandleVerifier [0x7ff69cd5a485+31ca5]
+	chromedriver!GetHandleVerifier [0x7ff69cd62e7c+3a69c]
+	chromedriver!GetHandleVerifier [0x7ff69cd46a74+1e294]
+	chromedriver!GetHandleVerifier [0x7ff69cd46c04+1e424]
+	chromedriver!GetHandleVerifier [0x7ff69cd2b327+2b47]
+	KERNEL32!BaseThreadInitThunk [0x7ffe6444e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffe6578c3fc+2c]
+
+2026-05-12 08:56:36.137 | ERROR    | log:log_error:9 - check card return False Please find the reason
+2026-05-12 08:56:38.419 | ERROR    | log:log_error:9 - https://www.books.com.tw/products/0011032173 get some errors
+2026-05-12 08:56:53.041 | INFO     | log:log_info:6 - book: [13/50]
+2026-05-12 08:57:02.098 | INFO     | log:log_info:6 - 0011032817 saved
+2026-05-12 08:57:23.720 | INFO     | log:log_info:6 - book: [14/50]
+2026-05-12 08:57:32.712 | INFO     | log:log_info:6 - 0011032824 saved
+2026-05-12 08:57:51.286 | INFO     | log:log_info:6 - book: [15/50]
+2026-05-12 08:58:00.237 | INFO     | log:log_info:6 - 0011032936 saved
+2026-05-12 08:58:19.871 | INFO     | log:log_info:6 - book: [16/50]
+2026-05-12 08:58:28.763 | INFO     | log:log_info:6 - 0011033044 saved
+2026-05-12 08:58:42.491 | INFO     | log:log_info:6 - book: [17/50]
+2026-05-12 08:58:51.329 | INFO     | log:log_info:6 - 0011033082 saved
+2026-05-12 08:59:13.900 | INFO     | log:log_info:6 - book: [18/50]
+2026-05-12 08:59:23.134 | INFO     | log:log_info:6 - 0011033098 saved
+2026-05-12 08:59:39.847 | INFO     | log:log_info:6 - book: [19/50]
+2026-05-12 08:59:48.502 | INFO     | log:log_info:6 - 0011033246 saved
+2026-05-12 09:00:00.992 | INFO     | log:log_info:6 - book: [20/50]
+2026-05-12 09:00:10.115 | INFO     | log:log_info:6 - 0011033745 saved
+2026-05-12 09:01:24.946 | INFO     | log:log_info:6 - book: [21/50]
+2026-05-12 09:01:34.211 | INFO     | log:log_info:6 - 0011033895 saved
+2026-05-12 09:01:51.106 | INFO     | log:log_info:6 - book: [22/50]
+2026-05-12 09:01:59.893 | INFO     | log:log_info:6 - 0011026375 saved
+2026-05-12 09:02:19.284 | INFO     | log:log_info:6 - book: [23/50]
+2026-05-12 09:02:28.595 | INFO     | log:log_info:6 - 0011032195 saved
+2026-05-12 09:02:49.085 | INFO     | log:log_info:6 - book: [24/50]
+2026-05-12 09:02:57.997 | INFO     | log:log_info:6 - 0011032449 saved
+2026-05-12 09:03:11.802 | INFO     | log:log_info:6 - book: [25/50]
+2026-05-12 09:03:21.363 | INFO     | log:log_info:6 - 0011032459 saved
+2026-05-12 09:03:39.536 | INFO     | log:log_info:6 - book: [26/50]
+2026-05-12 09:03:48.508 | INFO     | log:log_info:6 - 0011032473 saved
+2026-05-12 09:04:04.860 | INFO     | log:log_info:6 - book: [27/50]
+2026-05-12 09:04:14.229 | INFO     | log:log_info:6 - 0011032863 saved
+2026-05-12 09:04:28.338 | INFO     | log:log_info:6 - book: [28/50]
+2026-05-12 09:04:37.328 | INFO     | log:log_info:6 - 0011033002 saved
+2026-05-12 09:04:57.298 | INFO     | log:log_info:6 - book: [29/50]
+2026-05-12 09:05:06.174 | INFO     | log:log_info:6 - 0011034298 saved
+2026-05-12 09:05:28.472 | INFO     | log:log_info:6 - book: [30/50]
+2026-05-12 09:16:36.095 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 09:16:36.097 | INFO     | log:log_info:6 - [文學小說]
+2026-05-12 09:16:37.671 | INFO     | log:log_info:6 - page [1/10]
+2026-05-12 09:16:46.560 | INFO     | log:log_info:6 - Page[1] OK!
+2026-05-12 09:16:48.032 | INFO     | log:log_info:6 - page [2/10]
+2026-05-12 09:16:56.610 | INFO     | log:log_info:6 - Page[2] OK!
+2026-05-12 09:16:58.100 | INFO     | log:log_info:6 - page [3/10]
+2026-05-12 09:17:06.517 | INFO     | log:log_info:6 - Page[3] OK!
+2026-05-12 09:17:08.030 | INFO     | log:log_info:6 - page [4/10]
+2026-05-12 09:17:17.229 | INFO     | log:log_info:6 - Page[4] OK!
+2026-05-12 09:17:18.806 | INFO     | log:log_info:6 - page [5/10]
+2026-05-12 09:17:27.919 | INFO     | log:log_info:6 - Page[5] OK!
+2026-05-12 09:17:29.453 | INFO     | log:log_info:6 - page [6/10]
+2026-05-12 09:17:38.512 | INFO     | log:log_info:6 - Page[6] OK!
+2026-05-12 09:17:40.062 | INFO     | log:log_info:6 - page [7/10]
+2026-05-12 09:17:49.194 | INFO     | log:log_info:6 - Page[7] OK!
+2026-05-12 09:17:50.652 | INFO     | log:log_info:6 - page [8/10]
+2026-05-12 09:17:59.711 | INFO     | log:log_info:6 - Page[8] OK!
+2026-05-12 09:18:01.292 | INFO     | log:log_info:6 - page [9/10]
+2026-05-12 09:18:10.324 | INFO     | log:log_info:6 - book: [1/21]
+2026-05-12 09:18:20.387 | INFO     | log:log_info:6 - 0011032410 saved
+2026-05-12 09:18:33.124 | INFO     | log:log_info:6 - book: [2/21]
+2026-05-12 09:18:42.294 | INFO     | log:log_info:6 - 0011032647 saved
+2026-05-12 09:19:02.103 | INFO     | log:log_info:6 - book: [3/21]
+2026-05-12 09:19:11.226 | INFO     | log:log_info:6 - 0011032651 saved
+2026-05-12 09:19:27.446 | INFO     | log:log_info:6 - book: [4/21]
+2026-05-12 09:19:47.826 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 09:19:47.827 | INFO     | log:log_info:6 - [文學小說]
+2026-05-12 09:19:49.556 | INFO     | log:log_info:6 - page [1/10]
+2026-05-12 09:19:58.702 | INFO     | log:log_info:6 - Page[1] OK!
+2026-05-12 09:20:01.078 | INFO     | log:log_info:6 - page [2/10]
+2026-05-12 09:20:10.180 | INFO     | log:log_info:6 - Page[2] OK!
+2026-05-12 09:20:12.093 | INFO     | log:log_info:6 - page [3/10]
+2026-05-12 09:20:21.373 | INFO     | log:log_info:6 - Page[3] OK!
+2026-05-12 09:20:23.742 | INFO     | log:log_info:6 - page [4/10]
+2026-05-12 09:20:32.935 | INFO     | log:log_info:6 - Page[4] OK!
+2026-05-12 09:20:35.202 | INFO     | log:log_info:6 - page [5/10]
+2026-05-12 09:20:44.319 | INFO     | log:log_info:6 - Page[5] OK!
+2026-05-12 09:20:46.529 | INFO     | log:log_info:6 - page [6/10]
+2026-05-12 09:20:55.639 | INFO     | log:log_info:6 - Page[6] OK!
+2026-05-12 09:20:57.844 | INFO     | log:log_info:6 - page [7/10]
+2026-05-12 09:21:06.963 | INFO     | log:log_info:6 - Page[7] OK!
+2026-05-12 09:21:09.209 | INFO     | log:log_info:6 - page [8/10]
+2026-05-12 09:21:18.304 | INFO     | log:log_info:6 - Page[8] OK!
+2026-05-12 09:21:20.549 | INFO     | log:log_info:6 - page [9/10]
+2026-05-12 09:21:29.573 | INFO     | log:log_info:6 - book: [1/18]
+2026-05-12 09:21:39.224 | INFO     | log:log_info:6 - 0011032326 saved
+2026-05-12 09:22:00.424 | INFO     | log:log_info:6 - book: [2/18]
+2026-05-12 09:22:09.951 | INFO     | log:log_info:6 - 0011032332 saved
+2026-05-12 09:22:24.883 | INFO     | log:log_info:6 - book: [3/18]
+2026-05-12 09:22:34.571 | INFO     | log:log_info:6 - 0011032596 saved
+2026-05-12 09:22:55.136 | INFO     | log:log_info:6 - book: [4/18]
+2026-05-12 09:23:04.248 | INFO     | log:log_info:6 - 0011032614 saved
+2026-05-12 09:23:19.026 | INFO     | log:log_info:6 - book: [5/18]
+2026-05-12 09:23:26.494 | ERROR    | log:log_error:9 - Unexpected alert on GET https://www.books.com.tw/products/0011032176: Alert Text: 本商品為限制級商品，限18歲以上會員瀏覽，請先登入會員。
+Message: unexpected alert open: {Alert text : 本商品為限制級商品，限18歲以上會員瀏覽，請先登入會員。}
+  (Session info: chrome=148.0.7778.96)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff69cd3d6d5+14ef5]
+	chromedriver!GetHandleVerifier [0x7ff69cd3d740+14f60]
+	chromedriver!(No symbol) [0x7ff69ca8d59d]
+	chromedriver!(No symbol) [0x7ff69cb34fa4]
+	chromedriver!(No symbol) [0x7ff69cad9608]
+	chromedriver!(No symbol) [0x7ff69cada4f3]
+	chromedriver!GetHandleVerifier [0x7ff69d03b779+312f99]
+	chromedriver!GetHandleVerifier [0x7ff69d035c8b+30d4ab]
+	chromedriver!GetHandleVerifier [0x7ff69d059012+330832]
+	chromedriver!GetHandleVerifier [0x7ff69cd5a485+31ca5]
+	chromedriver!GetHandleVerifier [0x7ff69cd62e7c+3a69c]
+	chromedriver!GetHandleVerifier [0x7ff69cd46a74+1e294]
+	chromedriver!GetHandleVerifier [0x7ff69cd46c04+1e424]
+	chromedriver!GetHandleVerifier [0x7ff69cd2b327+2b47]
+	KERNEL32!BaseThreadInitThunk [0x7ffe6444e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffe6578c3fc+2c]
+
+2026-05-12 09:23:28.901 | ERROR    | log:log_error:9 - check card return False Please find the reason
+2026-05-12 09:23:31.122 | ERROR    | log:log_error:9 - https://www.books.com.tw/products/0011032176 get some errors
+2026-05-12 09:23:50.764 | INFO     | log:log_info:6 - book: [6/18]
+2026-05-12 09:24:00.236 | INFO     | log:log_info:6 - 0011032478 saved
+2026-05-12 09:24:20.642 | INFO     | log:log_info:6 - book: [7/18]
+2026-05-12 09:24:31.009 | INFO     | log:log_info:6 - 0011032481 saved
+2026-05-12 09:24:51.684 | INFO     | log:log_info:6 - book: [8/18]
+2026-05-12 09:25:01.450 | INFO     | log:log_info:6 - 0011032724 saved
+2026-05-12 09:25:20.274 | INFO     | log:log_info:6 - book: [9/18]
+2026-05-12 09:25:30.086 | INFO     | log:log_info:6 - 0011031657 saved
+2026-05-12 09:25:48.999 | INFO     | log:log_info:6 - book: [10/18]
+2026-05-12 09:25:58.415 | INFO     | log:log_info:6 - 0011031661 saved
+2026-05-12 09:26:19.505 | INFO     | log:log_info:6 - book: [11/18]
+2026-05-12 09:26:28.865 | INFO     | log:log_info:6 - 0011032325 saved
+2026-05-12 09:26:43.161 | INFO     | log:log_info:6 - book: [12/18]
+2026-05-12 09:26:53.030 | INFO     | log:log_info:6 - 0011032327 saved
+2026-05-12 09:27:08.845 | INFO     | log:log_info:6 - book: [13/18]
+2026-05-12 09:27:18.584 | INFO     | log:log_info:6 - 0011029595 saved
+2026-05-12 09:27:37.293 | INFO     | log:log_info:6 - book: [14/18]
+2026-05-12 09:27:46.312 | INFO     | log:log_info:6 - 0011031284 saved
+2026-05-12 09:28:07.928 | INFO     | log:log_info:6 - book: [15/18]
+2026-05-12 09:28:16.935 | INFO     | log:log_info:6 - 0011031655 saved
+2026-05-12 09:28:33.159 | INFO     | log:log_info:6 - book: [16/18]
+2026-05-12 09:28:42.602 | INFO     | log:log_info:6 - 0011031716 saved
+2026-05-12 09:29:01.508 | INFO     | log:log_info:6 - book: [17/18]
+2026-05-12 09:29:10.601 | INFO     | log:log_info:6 - 0011031775 saved
+2026-05-12 09:29:23.185 | INFO     | log:log_info:6 - book: [18/18]
+2026-05-12 09:29:32.302 | INFO     | log:log_info:6 - 0011031713 saved
+2026-05-12 09:29:54.284 | INFO     | log:log_info:6 - Page[9] OK!
+2026-05-12 09:29:55.832 | INFO     | log:log_info:6 - page [10/10]
+2026-05-12 09:30:06.886 | INFO     | log:log_info:6 - book: [1/49]
+2026-05-12 09:30:15.829 | INFO     | log:log_info:6 - 0011032030 saved
+2026-05-12 09:30:34.663 | INFO     | log:log_info:6 - book: [2/49]
+2026-05-12 09:30:43.295 | INFO     | log:log_info:6 - 0011032119 saved
+2026-05-12 09:30:59.266 | INFO     | log:log_info:6 - book: [3/49]
+2026-05-12 09:31:08.138 | INFO     | log:log_info:6 - 0011031825 saved
+2026-05-12 09:31:28.850 | INFO     | log:log_info:6 - book: [4/49]
+2026-05-12 09:31:37.968 | INFO     | log:log_info:6 - 0011032281 saved
+2026-05-12 09:31:53.051 | INFO     | log:log_info:6 - book: [5/49]
+2026-05-12 09:32:02.663 | INFO     | log:log_info:6 - 0011032474 saved
+2026-05-12 09:32:21.474 | INFO     | log:log_info:6 - book: [6/49]
+2026-05-12 09:32:30.858 | INFO     | log:log_info:6 - 0011032475 saved
+2026-05-12 09:32:45.796 | INFO     | log:log_info:6 - book: [7/49]
+2026-05-12 09:32:55.089 | INFO     | log:log_info:6 - 0011032619 saved
+2026-05-12 09:33:09.569 | INFO     | log:log_info:6 - book: [8/49]
+2026-05-12 09:33:19.485 | INFO     | log:log_info:6 - 0011033156 saved
+2026-05-12 09:33:40.549 | INFO     | log:log_info:6 - book: [9/49]
+2026-05-12 09:33:49.785 | INFO     | log:log_info:6 - 0010963511 saved
+2026-05-12 09:34:09.606 | INFO     | log:log_info:6 - book: [10/49]
+2026-05-12 09:34:18.698 | INFO     | log:log_info:6 - 0011031216 saved
+2026-05-12 09:34:37.685 | INFO     | log:log_info:6 - book: [11/49]
+2026-05-12 09:34:47.971 | INFO     | log:log_info:6 - 0011031703 saved
+2026-05-12 09:35:01.247 | INFO     | log:log_info:6 - book: [12/49]
+2026-05-12 09:35:10.619 | INFO     | log:log_info:6 - 0011027475 saved
+2026-05-12 09:35:31.216 | INFO     | log:log_info:6 - book: [13/49]
+2026-05-12 09:35:40.618 | INFO     | log:log_info:6 - 0011032103 saved
+2026-05-12 09:35:56.854 | INFO     | log:log_info:6 - book: [14/49]
+2026-05-12 09:36:05.885 | INFO     | log:log_info:6 - 0011031520 saved
+2026-05-12 09:36:25.882 | INFO     | log:log_info:6 - book: [15/49]
+2026-05-12 09:36:34.674 | INFO     | log:log_info:6 - 0011032134 saved
+2026-05-12 09:36:55.578 | INFO     | log:log_info:6 - book: [16/49]
+2026-05-12 09:37:04.811 | INFO     | log:log_info:6 - 0011031167 saved
+2026-05-12 09:37:22.852 | INFO     | log:log_info:6 - book: [17/49]
+2026-05-12 09:37:31.430 | INFO     | log:log_info:6 - 0011030426 saved
+2026-05-12 09:37:48.856 | INFO     | log:log_info:6 - book: [18/49]
+2026-05-12 09:37:57.837 | INFO     | log:log_info:6 - 0011030429 saved
+2026-05-12 09:38:11.498 | INFO     | log:log_info:6 - book: [19/49]
+2026-05-12 09:38:20.350 | INFO     | log:log_info:6 - 0011031136 saved
+2026-05-12 09:38:36.331 | INFO     | log:log_info:6 - book: [20/49]
+2026-05-12 09:38:45.878 | INFO     | log:log_info:6 - 0011031574 saved
+2026-05-12 09:40:03.807 | INFO     | log:log_info:6 - book: [21/49]
+2026-05-12 09:40:13.358 | INFO     | log:log_info:6 - 0011031581 saved
+2026-05-12 09:40:35.562 | INFO     | log:log_info:6 - book: [22/49]
+2026-05-12 09:40:45.607 | INFO     | log:log_info:6 - 0011031915 saved
+2026-05-12 09:41:05.287 | INFO     | log:log_info:6 - book: [23/49]
+2026-05-12 09:41:15.091 | INFO     | log:log_info:6 - 0010887262 saved
+2026-05-12 09:41:34.780 | INFO     | log:log_info:6 - book: [24/49]
+2026-05-12 09:41:43.586 | INFO     | log:log_info:6 - 0010922934 saved
+2026-05-12 09:42:00.542 | INFO     | log:log_info:6 - book: [25/49]
+2026-05-12 09:42:09.366 | INFO     | log:log_info:6 - 0011031246 saved
+2026-05-12 09:42:30.877 | INFO     | log:log_info:6 - book: [26/49]
+2026-05-12 09:42:39.791 | INFO     | log:log_info:6 - 0011031286 saved
+2026-05-12 09:42:55.044 | INFO     | log:log_info:6 - book: [27/49]
+2026-05-12 09:43:04.215 | INFO     | log:log_info:6 - 0011031374 saved
+2026-05-12 09:43:25.567 | INFO     | log:log_info:6 - book: [28/49]
+2026-05-12 09:43:34.316 | INFO     | log:log_info:6 - 0011031376 saved
+2026-05-12 09:43:51.711 | INFO     | log:log_info:6 - book: [29/49]
+2026-05-12 09:44:00.474 | INFO     | log:log_info:6 - 0011030459 saved
+2026-05-12 09:44:14.755 | INFO     | log:log_info:6 - book: [30/49]
+2026-05-12 09:44:23.867 | INFO     | log:log_info:6 - 0011031069 saved
+2026-05-12 09:44:44.768 | INFO     | log:log_info:6 - book: [31/49]
+2026-05-12 09:44:54.761 | INFO     | log:log_info:6 - 0011029825 saved
+2026-05-12 09:45:10.202 | INFO     | log:log_info:6 - book: [32/49]
+2026-05-12 09:45:19.586 | INFO     | log:log_info:6 - 0011030032 saved
+2026-05-12 09:45:37.564 | INFO     | log:log_info:6 - book: [33/49]
+2026-05-12 09:45:48.203 | INFO     | log:log_info:6 - 0011030126 saved
+2026-05-12 09:46:06.681 | INFO     | log:log_info:6 - book: [34/49]
+2026-05-12 09:46:15.699 | INFO     | log:log_info:6 - 0011030137 saved
+2026-05-12 09:46:32.992 | INFO     | log:log_info:6 - book: [35/49]
+2026-05-12 09:46:41.752 | INFO     | log:log_info:6 - 0011030139 saved
+2026-05-12 09:46:58.765 | INFO     | log:log_info:6 - book: [36/49]
+2026-05-12 09:47:27.252 | INFO     | log:log_info:6 - 0011030140 saved
+2026-05-12 09:47:49.180 | INFO     | log:log_info:6 - book: [37/49]
+2026-05-12 09:48:00.563 | INFO     | log:log_info:6 - 0011031001 saved
+2026-05-12 09:48:20.823 | INFO     | log:log_info:6 - book: [38/49]
+2026-05-12 09:48:30.062 | INFO     | log:log_info:6 - 0011029889 saved
+2026-05-12 09:48:43.718 | INFO     | log:log_info:6 - book: [39/49]
+2026-05-12 09:48:53.325 | INFO     | log:log_info:6 - 0011030290 saved
+2026-05-12 09:49:07.012 | INFO     | log:log_info:6 - book: [40/49]
+2026-05-12 09:49:15.828 | INFO     | log:log_info:6 - 0011030559 saved
+2026-05-12 09:50:36.062 | INFO     | log:log_info:6 - book: [41/49]
+2026-05-12 09:50:44.871 | INFO     | log:log_info:6 - 0011030713 saved
+2026-05-12 09:50:58.544 | INFO     | log:log_info:6 - book: [42/49]
+2026-05-12 09:51:07.861 | INFO     | log:log_info:6 - 0011031476 saved
+2026-05-12 09:51:30.347 | INFO     | log:log_info:6 - book: [43/49]
+2026-05-12 09:51:39.073 | INFO     | log:log_info:6 - 0011026374 saved
+2026-05-12 09:52:00.010 | INFO     | log:log_info:6 - book: [44/49]
+2026-05-12 09:52:09.222 | INFO     | log:log_info:6 - 0011029688 saved
+2026-05-12 09:52:22.403 | INFO     | log:log_info:6 - book: [45/49]
+2026-05-12 09:52:31.558 | INFO     | log:log_info:6 - 0011030797 saved
+2026-05-12 09:52:54.002 | INFO     | log:log_info:6 - book: [46/49]
+2026-05-12 09:53:03.354 | INFO     | log:log_info:6 - 0011030230 saved
+2026-05-12 09:53:24.919 | INFO     | log:log_info:6 - book: [47/49]
+2026-05-12 09:53:34.681 | INFO     | log:log_info:6 - 0011030232 saved
+2026-05-12 09:53:55.671 | INFO     | log:log_info:6 - book: [48/49]
+2026-05-12 09:54:04.421 | INFO     | log:log_info:6 - 0011030832 saved
+2026-05-12 09:54:18.025 | INFO     | log:log_info:6 - book: [49/49]
+2026-05-12 09:54:27.152 | INFO     | log:log_info:6 - 0011030891 saved
+2026-05-12 09:54:44.850 | INFO     | log:log_info:6 - Page[10] OK!
+2026-05-12 09:54:50.381 | INFO     | log:log_info:6 - [商業理財]
+2026-05-12 09:54:51.864 | INFO     | log:log_info:6 - page [1/10]
+2026-05-12 09:55:02.562 | INFO     | log:log_info:6 - book: [1/50]
+2026-05-12 09:55:11.791 | INFO     | log:log_info:6 - 0011050988 saved
+2026-05-12 09:55:32.492 | INFO     | log:log_info:6 - book: [2/50]
+2026-05-12 09:55:41.460 | INFO     | log:log_info:6 - 0011050625 saved
+2026-05-12 09:55:54.731 | INFO     | log:log_info:6 - book: [3/50]
+2026-05-12 09:56:03.696 | INFO     | log:log_info:6 - 0011050390 saved
+2026-05-12 09:56:22.993 | INFO     | log:log_info:6 - book: [4/50]
+2026-05-12 09:56:32.516 | INFO     | log:log_info:6 - 0011050392 saved
+2026-05-12 09:56:47.518 | INFO     | log:log_info:6 - book: [5/50]
+2026-05-12 09:56:56.268 | INFO     | log:log_info:6 - 0011050120 saved
+2026-05-12 09:57:13.827 | INFO     | log:log_info:6 - book: [6/50]
+2026-05-12 09:57:22.678 | INFO     | log:log_info:6 - 0011050255 saved
+2026-05-12 09:57:37.960 | INFO     | log:log_info:6 - book: [7/50]
+2026-05-12 09:57:47.132 | INFO     | log:log_info:6 - 0011050310 saved
+2026-05-12 09:58:01.604 | INFO     | log:log_info:6 - book: [8/50]
+2026-05-12 09:58:10.595 | INFO     | log:log_info:6 - 0011050312 saved
+2026-05-12 09:58:26.078 | INFO     | log:log_info:6 - book: [9/50]
+2026-05-12 09:58:32.925 | INFO     | log:log_info:6 - 0011049920 saved
+2026-05-12 09:58:46.196 | INFO     | log:log_info:6 - book: [10/50]
+2026-05-12 09:58:55.057 | INFO     | log:log_info:6 - 0011050178 saved
+2026-05-12 09:59:12.671 | INFO     | log:log_info:6 - book: [11/50]
+2026-05-12 09:59:21.504 | INFO     | log:log_info:6 - 0011049504 saved
+2026-05-12 09:59:42.294 | INFO     | log:log_info:6 - book: [12/50]
+2026-05-12 09:59:51.441 | INFO     | log:log_info:6 - 0011049195 saved
+2026-05-12 12:25:22.705 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 12:25:22.707 | INFO     | log:log_info:6 - [商業理財]
+2026-05-12 12:25:26.292 | INFO     | log:log_info:6 - page [1/10]
+2026-05-12 12:25:36.182 | INFO     | log:log_info:6 - book: [1/38]
+2026-05-12 12:25:51.485 | INFO     | log:log_info:6 - 0011049317 saved
+2026-05-12 12:28:29.097 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 12:28:45.006 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 12:28:58.068 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 12:28:58.069 | INFO     | log:log_info:6 - [商業理財]
+2026-05-12 12:28:59.703 | INFO     | log:log_info:6 - page [1/10]
+2026-05-12 12:29:09.197 | INFO     | log:log_info:6 - book: [1/37]
+2026-05-12 12:29:18.385 | INFO     | log:log_info:6 - 0011048493 saved
+2026-05-12 12:29:32.569 | INFO     | log:log_info:6 - book: [2/37]
+2026-05-12 12:29:41.942 | INFO     | log:log_info:6 - 0011048309 saved
+2026-05-12 12:29:56.207 | INFO     | log:log_info:6 - book: [3/37]
+2026-05-12 12:30:05.299 | INFO     | log:log_info:6 - 0011048310 saved
+2026-05-12 12:30:25.754 | INFO     | log:log_info:6 - book: [4/37]
+2026-05-12 12:30:34.784 | INFO     | log:log_info:6 - 0011048010 saved
+2026-05-12 12:30:50.631 | INFO     | log:log_info:6 - book: [5/37]
+2026-05-12 12:30:59.832 | INFO     | log:log_info:6 - 0011048175 saved
+2026-05-12 12:31:22.064 | INFO     | log:log_info:6 - book: [6/37]
+2026-05-12 12:31:31.662 | INFO     | log:log_info:6 - 0011046566 saved
+2026-05-12 12:31:48.689 | INFO     | log:log_info:6 - book: [7/37]
+2026-05-12 12:31:57.893 | INFO     | log:log_info:6 - 0011047108 saved
+2026-05-12 12:32:18.875 | INFO     | log:log_info:6 - book: [8/37]
+2026-05-12 12:32:27.942 | INFO     | log:log_info:6 - 0011047187 saved
+2026-05-12 12:32:41.571 | INFO     | log:log_info:6 - book: [9/37]
+2026-05-12 12:32:50.985 | INFO     | log:log_info:6 - 0011047417 saved
+2026-05-12 12:33:10.327 | INFO     | log:log_info:6 - book: [10/37]
+2026-05-12 12:33:20.744 | INFO     | log:log_info:6 - 0011047464 saved
+2026-05-12 12:33:42.644 | INFO     | log:log_info:6 - book: [11/37]
+2026-05-12 18:25:59.173 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 18:25:59.204 | INFO     | log:log_info:6 - [商業理財]
+2026-05-12 18:26:33.342 | INFO     | log:log_info:6 - card had been saved
+2026-05-12 18:26:33.345 | INFO     | log:log_info:6 - [商業理財]
+2026-05-12 18:26:35.560 | INFO     | log:log_info:6 - page [1/1]
+2026-05-12 18:26:44.501 | INFO     | log:log_info:6 - book: [1/27]
+2026-05-12 18:26:53.039 | INFO     | log:log_info:6 - 0011047586 saved
