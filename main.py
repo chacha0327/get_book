@@ -31,15 +31,13 @@ def loop_page(card_url, max_page: int, max_book: int):
 
 def setting():
     setting = list(input("maxpage maxbook").split(" "))
-    max_page = int(setting[1])
-    max_book = int(setting[1])
-    return max_page, max_book
+    return int(setting[0]), int(setting[1])
 
 
 def run():
     max_page, max_book = setting()
     cards = check_card()
-    for idx, card in enumerate(cards[1:2], start=1):
+    for idx, card in enumerate(cards, start=1):
         card_url = card["url"]
         log_info(f"[{card["text"]}]")
         loop_page(card_url, max_page, max_book)
@@ -50,4 +48,5 @@ def run():
 
 
 if __name__ == "__main__":
+    convert_json()
     run()
