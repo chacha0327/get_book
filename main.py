@@ -33,17 +33,31 @@ def setting():
     setting = list(input("maxpage maxbook").split(" "))
     return int(setting[0]), int(setting[1])
 
-
-def run():
+def run_roating(cards):
     max_page, max_book = setting()
-    cards = check_card()
-    for idx, card in enumerate(cards, start=1):
+    for idx, card in enumerate(cards[18:19], start=1):
         card_url = card["url"]
         log_info(f"[{card["text"]}]")
         loop_page(card_url, max_page, max_book)
         time.sleep(random.uniform(5, 10))
         time_clock(idx, 20, 30.0)
-    print("end")
+def run_solo(cards):
+    max_page, max_book = setting()
+    idx = int(input("card idx"))
+    card = cards[idx]
+    card_url = card["url"]
+    log_info(f"[{card["text"]}]")
+    loop_page(card_url, max_page, max_book)
+    time.sleep(random.uniform(5, 10))
+    time_clock(idx, 20, 30.0)
+def run():
+    cards = check_card()
+    s = str(input("rot?"))
+    if s:
+        run_roating(cards)
+        return True
+    run_solo(cards)
+    return True
         
 
 

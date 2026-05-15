@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.remote.webdriver import WebDriver
 import time
 from bs4 import BeautifulSoup
-from log import log_error, log_error_log
+from log import log_error
 from storage import save_error_url
 
 def make_driver():
@@ -29,7 +29,6 @@ def fetch_html(driver: WebDriver, url: str, wait_sec: int = 5):
         return driver.page_source
     except UnexpectedAlertPresentException as e:
         log_error(f"Unexpected alert on GET {url}: {e}")
-        log_error_log(f"Unexpected alert on GET {url}: {e}")
         save_error_url(url)
         _accept_alert(driver)
         time.sleep(1)
@@ -37,16 +36,13 @@ def fetch_html(driver: WebDriver, url: str, wait_sec: int = 5):
             driver.get(url)
         except Exception as second_e:
             log_error(f"Retry failed after accepting alert: {second_e}")
-            log_error_log(f"Retry failed after accepting alert: {second_e}")
             return None
     except WebDriverException as e:
         log_error(f"WebDriver error on GET {url}: {e}")
-        log_error_log(f"WebDriver error on GET {url}: {e}")
         save_error_url(url)
         return None
     except TypeError as third_e:
         log_error(f"Type error on GET {url}: {third_e}")
-        log_error_log(f"Type error on GET {url}: {third_e}")
         save_error_url(url)
         return None
 
